@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".DashboardActivity">
+
+
+
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+         <com.google.android.material.appbar.AppBarLayout
+             android:id="@+id/ppp"
+             android:layout_width="match_parent"
+             android:layout_height="45dp">
+             <com.google.android.material.appbar.MaterialToolbar
+                 android:id="@+id/collapsingtoolbarlayout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@color/white"
+                 app:layout_scrollFlags="scroll|enterAlways">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingTop="7dp">
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+                         <RelativeLayout
+                             android:id="@+id/op"
+                             android:layout_width="wrap_content"
+                             android:layout_marginBottom="10dp"
+                             android:layout_height="wrap_content">
+                             <ImageButton
+                                 android:id="@+id/searchicon"
+                                 android:layout_marginRight="25dp"
+                                 android:layout_toLeftOf="@+id/mesicon"
+                                 android:src="@drawable/ic_search"
+                                 android:layout_width="wrap_content"
+                                 android:background="@color/white"
+                                 android:layout_height="wrap_content"/>
+                             <ImageButton
+                                 android:id="@+id/mesicon"
+                                 android:layout_marginRight="20dp"
+                                 android:layout_alignParentRight="true"
+                                 android:src="@drawable/ic_message"
+                                 android:layout_width="wrap_content"
+                                 android:background="@color/white"
+                                 android:layout_height="wrap_content"/>
+                         </RelativeLayout>
+
+                     </RelativeLayout>
+                 </RelativeLayout>
+             </com.google.android.material.appbar.MaterialToolbar>
+         </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagerbottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/nav_bottom"
+            android:layout_below="@+id/ppp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemTextColor="#1E90FF"
+            app:itemIconTint="@color/icon_color"
+            android:background="@color/white"
+            app:menu="@menu/menu_nav">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            app:headerLayout="@layout/header_drawer"
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:itemIconSize="25dp"
+            android:background="@color/white"
+            app:itemTextColor="@color/black"
+            app:itemIconTint="@color/black"
+            app:menu="@menu/drawer_menu"
+            android:gravity="start">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

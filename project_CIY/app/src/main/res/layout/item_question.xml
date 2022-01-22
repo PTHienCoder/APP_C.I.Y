@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/details_user"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/avatar_post"
+                    app:c_background_color="@null"
+                    android:src="@drawable/ic_face"/>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20sp"
+                    android:layout_toRightOf="@+id/avatar_post"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/time_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="9dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btn_more"
+                android:layout_width="31dp"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_3chamdoc" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_post"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/avatar_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tilte"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:autoLink="all"/>
+            <TextView
+                android:background="@drawable/skip_button"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/cat_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/desc_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:autoLink="all"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/image_post"
+            android:layout_below="@+id/content_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="250dp"
+            android:maxHeight="500dp"/>
+        <LinearLayout
+
+            android:paddingTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/image_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/solike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#5095E8"
+                android:textStyle="normal"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/hrr"
+            android:layout_below="@+id/solike"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#D3D3D3"/>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/hrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:id="@+id/btn_help"
+                android:drawableStart="@drawable/ic_help"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:textSize="12dp"
+                android:text="Giải Quyết vấn đề !"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

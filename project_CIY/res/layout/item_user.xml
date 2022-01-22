@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="3dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/avatar_user"
+           android:src="@drawable/ic_face"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            />
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="20dp"
+                android:textColor="@color/black"
+            android:id="@+id/nametv_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Person Name"/>
+            <TextView
+                android:id="@+id/emailtv_user"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Person Email"/>
+        </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:textSize="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="100dp"
+            android:id="@+id/follow"
+            style="@style/loginButton"
+            android:layout_marginRight="10dp"
+            android:text="Đã Follow"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

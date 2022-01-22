@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Setting_app">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp">
+             <TextView
+                 android:layout_marginLeft="20dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="25dp"
+                 android:text="Cài đặt"
+                 android:textColor="@color/black"
+                 android:fontFamily="@font/poppinsbold"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp">
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/postswitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông báo bài viết"
+                android:textSize="17dp"
+                android:fontFamily="@font/poppinsbold"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp">
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Them Sáng/Tối"
+                android:textSize="17dp"
+                android:fontFamily="@font/poppinsbold"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp">
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngôn ngữ"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppinsbold"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp">
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chế dộ tiết kiệm pin"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppinsbold"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp">
+            <TextView
+                android:id="@+id/p4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mức độ sử dụng dữ liệu"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppinsbold"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

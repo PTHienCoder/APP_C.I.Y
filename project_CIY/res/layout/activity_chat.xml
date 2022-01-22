@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F5F5F5"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobarchat"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/AppTheme">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/backc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/avatar_chat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_face"
+                app:c_background_color="@color/colorAccent"/>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/name_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="His Name"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/status_chat"
+                    android:textSize="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rcv_chat"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/toobarchat"
+          android:layout_above="@+id/chat_layout" />
+
+
+    <LinearLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/other_chat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_3chamdoc"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/image_chat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_image"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/camera_chat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_camera"/>
+        <ImageView
+            android:id="@+id/mic_chat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_mic"/>
+        <EditText
+            android:id="@+id/text_chat"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_box"
+            android:hint="Aa..."
+            android:inputType="textCapSentences|textImeMultiLine"
+            android:padding="7dp"
+            android:textSize="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"/>
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:id="@+id/send_chat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_send"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

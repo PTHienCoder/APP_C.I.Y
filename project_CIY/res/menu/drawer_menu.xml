@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item android:id="@+id/pro1"
+
+            android:icon="@drawable/ic_person"
+            android:title="Hồ Sơ">
+        </item>
+        <item android:id="@+id/pro2"
+            android:icon="@drawable/ic_project"
+            android:title="Dự án">
+        </item>
+        <item android:id="@+id/pro3"
+            android:icon="@drawable/ic_topic"
+            android:title="Chủ đề">
+        </item>
+        <item android:id="@+id/pro4"
+            android:icon="@drawable/ic_save"
+            android:title="Đánh dấu">
+        </item>
+        <item android:id="@+id/pro5"
+            android:icon="@drawable/ic_histor"
+            android:title="Gần đây">
+        </item>
+        <item android:id="@+id/pro6"
+            android:icon="@drawable/ic_even"
+            android:title="Sự kiện">
+        </item>
+
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item android:id="@+id/ab1"
+            android:icon="@drawable/ic_setting"
+            android:title="Cài đặt">
+        </item>
+        <item android:id="@+id/ab2"
+            android:icon="@drawable/ic_about"
+            android:title="Về Chúng Tôi">
+        </item>
+        <item android:id="@+id/ab3"
+            android:icon="@drawable/ic_logout"
+            android:title="Đăng xuất">
+        </item>
+    </group>
+</menu>

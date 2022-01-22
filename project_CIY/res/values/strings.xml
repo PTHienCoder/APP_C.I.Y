@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">project_CIY</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

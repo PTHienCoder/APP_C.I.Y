@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_color"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Activity">
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_above="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To C.I.Y"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+    <LinearLayout
+        android:id="@+id/logo"
+       android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="30sp">
+
+            <ImageView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo2"
+                android:layout_centerHorizontal="true" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/pp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creattivity In You "
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+    <ProgressBar
+        android:id="@+id/prgre"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ProgressBar>
+
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F5F5F5"
+    android:layout_height="match_parent"
+    tools:context=".ShowUserChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobarchat"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/AppTheme">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/backc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/avatar_chatss"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_face"
+                app:c_background_color="@color/colorAccent"/>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/name_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Chats"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <ImageButton
+                android:background="@color/white"
+                android:src="@drawable/ic_3chamdoc"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+            </ImageButton>
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:paddingTop="10dp"
+        android:layout_below="@+id/toobarchat"
+        android:id="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/white"
+                    app:layout_collapseMode="pin"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                </androidx.appcompat.widget.Toolbar>
+                <androidx.appcompat.widget.SearchView
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    app:queryHint="Bạn muốn tìm kiếm gì ?"
+                    android:id="@+id/searchpost"
+                    android:background="@drawable/skip_button"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="40dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_useronline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_user_chat"
+                    android:layout_below="@+id/toolbar1"
+                    android:layout_above="@+id/chat_layout" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_user_chat1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_user_chat"
+                    android:layout_below="@+id/rcv_useronline"
+                    android:layout_above="@+id/chat_layout" />
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

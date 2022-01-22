@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:orientation="horizontal">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/avatar_useruc"
+            android:src="@drawable/ic_face"
+            android:layout_width="60dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="60dp"
+            />
+        <ImageView
+            android:id="@+id/notiOnline"
+            android:background="@drawable/ic_offline"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/avatar_useruc"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/nametv_useruc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Person Name"/>
+            <TextView
+                android:maxLength="15"
+                android:id="@+id/lasmessgerchat"
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:textColor="#A9A9A9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sdass"/>
+        </LinearLayout>
+    </RelativeLayout>

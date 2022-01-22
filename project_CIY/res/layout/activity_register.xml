@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="64dp"
+            android:elevation="10dp"
+            android:translationZ="8dp"
+            app:cardCornerRadius="20sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:background="@drawable/skip_button"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/themeColor"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="16dp" />
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/skip_button"
+            android:drawableLeft="@drawable/email_icon"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/themeColor"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/skip_button"
+            android:drawableLeft="@drawable/ipassword_icon"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/themeColor"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="48dp"
+            android:theme="@style/Button.White"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            style="@style/loginButton"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

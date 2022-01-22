@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_item_chat"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/chat_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chat_right"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_marginLeft="60dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:text="His massage"/>
+            <ImageView
+                android:layout_toRightOf="@+id/avatar_chat"
+                android:layout_below="@+id/chat_tv"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/send_image"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_camera"/>
+            <TextView
+                android:layout_below="@+id/send_image"
+                android:id="@+id/time_chat"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15/05/2021 05:09PM"
+                android:textSize="10dp"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/isSeen"
+                android:layout_below="@+id/time_chat"
+                android:layout_marginLeft="80dp"
+                android:textAlignment="textEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered."
+                android:textSize="10dp"
+                />
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/ul"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:src="@drawable/ic_clode"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"/>
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/avatar_useruc"
+        android:src="@drawable/ic_face"
+        android:layout_width="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="60dp"
+        />
+    <LinearLayout
+        android:layout_toRightOf="@+id/avatar_useruc"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/name_noti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Person Name"/>
+        <TextView
+            android:maxLength="45"
+            android:id="@+id/tvnoti"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:textColor="#A9A9A9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sdass"/>
+        <TextView
+            android:maxLength="15"
+            android:id="@+id/timenoti"
+            android:textSize="12dp"
+            android:textStyle="italic"
+            android:textColor="#A9A9A9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sdass"/>
+    </LinearLayout>
+</RelativeLayout>

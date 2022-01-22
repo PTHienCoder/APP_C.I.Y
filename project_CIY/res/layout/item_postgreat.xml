@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="8dp">
+    <ImageView
+        android:id="@+id/offer_img"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_below="@+id/offer_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fried dump"
+        android:maxLength="16"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:text="49 mins"/>
+    <TextView
+        android:id="@+id/text_saleoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_description"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Sale off 30%"
+        android:layout_marginLeft="5dp"
+
+        android:textColor="#fd8700"/>
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_ratting"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="120dp">
+
+        <TextView
+            android:id="@+id/text_ratting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/dialog_addgroup"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/rv1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ảnh bìa Group của bạn (Nếu Cần)"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:id="@+id/cover_Gr"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorXam"
+                android:scaleType="fitXY"></ImageView>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:id="@+id/rlavata"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đặt tên nhóm"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:id="@+id/name_Gr"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập tên nhóm"
+                    android:background="@drawable/skip_button"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/desc_Gr"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mô tả"
+                    android:background="@drawable/skip_button"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn chế độ nhóm"
+                    android:textSize="16dp"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/spinnergr"
+                    android:textAlignment="center"/>
+
+
+
+
+               </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_blue"
+                        android:padding="0dp"
+                        android:text="CANCEL"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp" />
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/btn_cancel"
+                        android:background="@drawable/button_background_blue"
+                        android:id="@+id/btn_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="OK" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

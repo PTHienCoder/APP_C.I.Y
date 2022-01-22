@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="horizontal">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/avatar_useruc"
+        android:src="@drawable/ic_face"
+        android:layout_width="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="40dp"
+        />
+    <ImageView
+        android:id="@+id/notiOnline"
+        android:background="@drawable/ic_offline"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="26dp"/>
+
+</RelativeLayout>

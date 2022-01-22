@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbars"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/backs"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_back"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"/>
+                 <TextView
+                      android:paddingLeft="60dp"
+                     android:layout_toRightOf="@+id/backs"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="20dp"
+                     android:text="Trả lời bình luận"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_below="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/avatar_cmt"
+            app:c_background_color="@null"
+            android:src="@drawable/ic_face"/>
+        <LinearLayout
+            android:id="@+id/lu_cmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatar_cmt"
+            android:background="@drawable/bg_cmt"
+            android:paddingBottom="9dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="2dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_cmt"
+                android:textSize="16dp"
+                android:text="PT Hiển"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cmt_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/avatar_chat"
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:text="His massage"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_cmt"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lu_cmt"
+            android:text="15/05/2021 05:09PM"
+            android:textSize="10dp" />
+        <TextView
+            android:layout_toRightOf="@+id/time_cmt"
+            android:id="@+id/sotlbl"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lu_cmt"
+            android:text="Trả lời"
+            android:textSize="12dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_repcmnt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="30dp"
+            tools:listitem="@layout/item_chat_letf"
+            android:layout_below="@id/sotlbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/cen"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/myavata_cmt"
+            android:src="@drawable/ic_face"/>
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/text_cmt"
+            android:layout_weight="1"
+            app:iconifiedByDefault="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_box"
+            android:enabled="true"
+            android:padding="9dp"
+            android:hint="Aa..."
+            android:inputType="textCapSentences|textImeMultiLine"
+            android:textSize="15dp"
+            />
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:id="@+id/send_cmt"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_send"/>
+    </LinearLayout>
+
+</RelativeLayout>

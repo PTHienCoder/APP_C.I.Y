@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_img"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:padding="10dp"
+    android:elevation="5dp"
+    android:translationZ="2dp">
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/cat_img"
+        android:layout_centerHorizontal="true"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_face"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load category"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/cat_img"/>
+
+</RelativeLayout>
